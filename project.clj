@@ -25,11 +25,11 @@
                                     "test/js"]
 
   :profiles {:uberjar {:aot :all}
-             :dev {:dependencies [[figwheel-sidecar "0.5.4-7"]
+             :dev {:dependencies [[figwheel-sidecar "0.5.7"]
                                   [com.cemerick/piggieback "0.2.1"]
                                 ;;  [binaryage/devtools "0.8.0"]
                                   ]
-                   :plugins [[lein-figwheel "0.5.4-7"]
+                   :plugins [[lein-figwheel "0.5.7"]
                              [lein-doo "0.1.7"]]}}
   
   :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
