@@ -1,0 +1,21 @@
+{
+  "name": "trivia",
+  "homepage": "https://github.com/emaphis/Trivia-Game",
+  "authors": [
+    "emaphis <emaphis85@gmail.com>"
+  ],
+  "description": "Trivia Game",
+  "main": "",
+  "license": "GPL V3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

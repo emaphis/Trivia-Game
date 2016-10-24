@@ -1,15 +1,23 @@
 (ns trivia.core
-  (:require [reagent.core :as reagent]))
+  (:require [re-frame.core :as re-frame]
+            [reagent.core :as reagent]
+            [trivia.events :as events]
+            [trivia.subs :as subs]
+            [trivia.views :as views]))
+
+(enable-console-print!)
 
 (defn add-numbers [a b]
   (+ a b))
 
 
+
 (defn mount-root []
-  (reagent/render [:h1 "Hello world"]
+  (reagent/render [views/main-page]
                   (.getElementById js/document "app")))
 
 
 (defn ^:export init []
+  (re-frame/dispatch-sync [:initialize-db])
   (mount-root))
 
