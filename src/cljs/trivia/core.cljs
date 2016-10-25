@@ -10,14 +10,11 @@
 (defn add-numbers [a b]
   (+ a b))
 
-
-
 (defn mount-root []
   (reagent/render [views/main-page]
                   (.getElementById js/document "app")))
 
-
 (defn ^:export init []
-  (re-frame/dispatch-sync [:initialize-db])
+  (re-frame/dispatch-sync [:initialise-db])
   (mount-root))
 
